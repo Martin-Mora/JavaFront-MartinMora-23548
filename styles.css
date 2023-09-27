@@ -1,0 +1,313 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: Roboto, sans-serif;
+}
+
+
+/* nav */
+
+
+
+.navbar-brand{
+  /* border: 1px solid red; */
+  width: 4em;
+  height: 3em;
+}
+
+
+
+.navbar-brand img{
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+  /* border: 1px solid red; */
+  /* width: 50%; */
+  padding-right: 1.5em;
+}
+
+/* carousel */
+
+.item-1,.item-2,.item-3{
+  position: relative;
+  /* min-height: 1200px; */
+  height: 90vh;
+  z-index: 1;
+  /* border: 1px solid red; */
+  background-size: cover;
+  
+}
+
+.item-1{
+  background-position-x: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("./img/ba1.jpg");
+}
+
+.item-2{
+  background-position-x: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("./img/ba2.jpg");
+}
+
+.item-3{
+  background-position-x: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("./img/ba3.jpg");
+}
+
+
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+
+.carousel-caption{
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
+  /* height: 100vh; */
+  /* width: 100vw; */
+  /* margin-right: 12em; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  position: relative;
+  top:3em;
+  left: 2em;
+  width: 90%;
+  
+  text-align: end;
+  height: 100%;
+  width: 80%;
+  line-height: 1.6em;
+}
+
+.btn-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  margin: auto;
+  align-items: end;
+}
+
+.btn-orador,.btn-ticket{
+  border-radius:10px ;
+  padding: 8px;
+}
+
+.btn-orador{
+  background-color: transparent;
+  color: white;
+  border:1px solid white;
+}
+
+.btn-ticket{
+  background-color: rgb(25, 135, 84);
+  color: white;
+}
+
+
+/* oradores */
+
+.card-container{
+  width: 90%;
+  margin: auto;
+}
+
+.span-oradores{
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.card{
+  border: 1px solid #3333335a;
+  margin: 2em auto;
+  max-width: 400px;
+}
+
+.card-informacion{
+  padding: 1em;
+}
+
+.nombre-orador{
+  font-weight: 700;
+  margin-top: .5em;
+}
+
+.javaScript, .react,.negocios,.startups{
+  padding: 3px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.javaScript{
+  background-color: rgb(254, 193, 6);
+}
+
+.react{
+  background-color: rgb(23, 162, 185);
+  color: white;
+}
+
+.negocios{
+  background-color: rgb(108, 116, 126);
+  color: white;
+}
+
+.startups{
+  background-color: rgb(221, 54, 71);
+  color: white;
+}
+
+
+/* info mas */
+
+.info-mas__img{
+  width: 100%;
+  
+}
+
+.info-mas__img img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.info-mas_informacion{
+  margin-top: .2em;
+  background-color: rgb(53, 58, 64);
+  color: white;
+  padding: 1em;
+}
+
+.info-mas__titulo{
+  font-weight: 700;
+}
+
+.info-mas__btn{
+  background-color: rgb(53, 58, 64);
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: .5em;
+}
+
+
+/* formulario */
+
+h6{
+  font-size: .9em;
+}
+
+.needs-validation{
+  width: 90%;
+  margin: auto;
+  
+}
+
+
+.btn-form{
+  width: 100%;
+  margin: auto;
+  display: block;
+  background-color: rgb(150, 201, 62);
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+/* footer */
+
+footer{
+  background-color: rgb(27, 55, 69);
+  padding: 2em;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul li{
+  list-style: none;
+  margin: .2em;
+}
+
+
+footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width:768px) {
+
+  .carousel-caption{
+    width: 70%;
+    top: 18em;
+    left: 10em;
+  }
+
+  footer ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  footer ul li{
+    text-align: center;
+    margin: 1em;
+   
+  }
+}
+
+@media (min-width:1024px){
+
+  .carousel-caption{
+    width: 35%;
+    top: 18em;
+    left: 60em;
+    
+    /* border: 1px solid red; */
+    
+  }
+
+  .navbar-nav{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  .nav-link{
+    margin: 0 1em;
+  }
+
+
+  .card-container,.info-mas{
+    display: flex;
+  }
+
+  .info-mas{
+   height: 50vh;
+  }
+
+  .info-mas_informacion{
+    margin-top: 0;
+  }
+
+  .info-mas__img{
+    width: 160%;
+  }
+
+  .needs-validation{
+    width: 50%;
+  }
+}
+
